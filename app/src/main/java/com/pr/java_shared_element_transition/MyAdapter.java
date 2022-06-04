@@ -48,7 +48,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
             Intent intent = new Intent(context, MainActivity2.class);
             // create the transition animation - the images in the layouts
-            // of both activities are defined with android:transitionName="robot"
+            // of both activities are defined with android:transitionName="profile"
             ActivityOptions options = ActivityOptions
                     .makeSceneTransitionAnimation((Activity) context, holder.imageView, "profile");
             intent.putExtra("img",imagearraylist.get(position));
